@@ -27,11 +27,11 @@ a:link {
 }
 
 .logo {
-    max-width: 35%;
+    max-width: 90%;
 }
 
 .pinata {
-    max-width: 25%;
+    max-width: 70%;
 }
 
 .errorList {
@@ -97,13 +97,13 @@ footer {
             margin-top: 6%;
         }
 
-/*         .logo {
+        .logo {
             max-width: 35%;
         } 
 
         .pinata {
             max-width: 25%;
-        } */
+        }
     }
 
     /* Medium devices*/
@@ -112,13 +112,13 @@ footer {
             margin-top: 5%
         }
         
-/*         .logo {
+        .logo {
             max-width: 35%;
         } 
 
         .pinata {
             max-width: 25%;
-        } */
+        }
 
         .target, .input, .errorList, .reload {
             margin-top: 5%;
@@ -138,9 +138,9 @@ footer {
 
     /* large screens */
     @media (min-width: 1080px) { /*was 1080*/
-/*         .logo {
+        .logo {
             max-width: 35%;
-        }  */
+        } 
 
         .pinata {
             max-width: 35%;
