@@ -38,7 +38,7 @@ async function game() {
     }
 
     //set keyup event listener
-    document.querySelector(".input").addEventListener("keyup", (key) => {
+    document.querySelector(".input").addEventListener("keydown", (key) => {
 
         //enforcing 1 char limit for mobile phones
         letter.value.length > 1 ? letter.value = letter.value.substring(0, 1) : true;
