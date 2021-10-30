@@ -37,8 +37,13 @@ async function game() {
         domDecoy.style.animation = "endGame 3s";
     }
 
-    //set keydown event listener. Activates when the user presses 'enter'
-    document.querySelector(".input").addEventListener("keydown", (key) => {
+    //set keyup event listener
+    document.querySelector(".input").addEventListener("keyup", (key) => {
+
+        //enforcing 1 char limit for mobile phones
+        letter.value.length > 1 ? letter.value = letter.value.substring(0, 1) : true;
+
+        //check if key pressed was 'enter' to submit the letter. keyCode works on mobile as well
         if (key.keyCode == "13" && !gameOver) {
             //check if the letter is neither in the word nor in the error list
             if (!target.includes(letter.value) && !wrong.includes(letter.value)) {
@@ -46,9 +51,9 @@ async function game() {
                 wrong.push(letter.value);
                 errorList.innerHTML = wrong.join(" ");
             } else {
-                //show the matching letters
-                target.map((l, i)  => {
-                    letter.value == l ? decoy[i] = letter.value : true;
+                //if the letter is in the word, show the matching letters
+                target.map((l, index)  => {
+                    letter.value == l ? decoy[index] = letter.value : true;
                 });
             }
             
