@@ -17,7 +17,7 @@ body {
     font-family: 'ambystoma_mexicanumregular';
 }
 
-a:link {
+a:link, a:visited, a:active {
     text-decoration: none;
     color: inherit;
 }
@@ -27,11 +27,11 @@ a:link {
 }
 
 .logo {
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .pinata {
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .errorList {

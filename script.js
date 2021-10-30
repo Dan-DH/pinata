@@ -8,18 +8,18 @@ async function game() {
     //pinata image array
     const imgs = ["./assets/images/pinata1.webp", "./assets/images/pinata2.webp", "./assets/images/pinata3.webp", "./assets/images/pinata4.webp", "./assets/images/pinata5.webp", "./assets/images/pinata6.webp", "./assets/images/pinata7.webp", "./assets/images/pinata8.webp"];
 
-    //fetch the dictionary and pick a random word
-    const dict = await fetch("./dict.json").then(response => response.json())
-
+    //fetch the dictionary, pick a random word and turn it into an array
+    const dict = await fetch("./dict.json").then(response => response.json());
     const target = dict.data[Math.floor(Math.random() * 2466)].split("");
     
-    //create the decoy word with hyphens and display it
-    const decoy = []; 
-    target.map((l, i)=> {
+    //create the decoy word array with hyphens and display it
+    const decoy = [];
+
+    target.map((l)=> {
         decoy.push("-");
     });
 
-    var domDecoy = document.querySelector(".target")
+    var domDecoy = document.querySelector(".target");
     domDecoy.innerHTML = decoy.join(" "); 
     
     //set a variable to display wrong letters picked and another to count the errors committed
