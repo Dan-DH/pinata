@@ -1,0 +1,237 @@
+body {
+    background-color: brown;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw)   
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.head, .container {
+    margin: 10% 0 0 0;
+}
+
+.logo {
+    max-width: 90%;
+}
+
+.pinata {
+    max-width: 70%;
+}
+
+.errorList {
+    text-decoration-line: line-through;
+}
+
+.input {
+    text-align: center;
+    font-size: inherit;
+    max-width: 20%;
+    text-transform: inherit;
+}
+
+.reload {
+    transform: scale(1.5);
+}
+
+footer {
+    font-size: small;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+}
+
+@keyframes winDance {
+    25%  {transform: rotate(10deg);}
+    50%  {transform: rotate(-20deg);}
+    75%  {transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes endGame {
+    50%  {transform: scale(1.5);}
+    100% {transform: scale(1.0);}
+}
+
+/*MEDIA QUERIES*/
+
+    /*small phones*/
+    @media (max-width: 375px) and (max-height: 667px) {
+        .target, .input, .errorList {
+            margin-top: 5%;
+        }
+
+        .reload {
+            margin-top: 7%;
+        }
+
+        .logo {
+            max-width: 65%;
+        } 
+
+        .pinata {
+            max-width: 50%;
+        }
+    }
+
+    /*medium phones*/
+    @media (min-height: 700px) {
+        .target, .input, .errorList, .reload {
+            margin-top: 5%;
+        }
+    }
+
+    /*long phones*/
+    @media (min-height: 800px) {
+        .target, .input, .errorList, .reload {
+            margin-top: 6%;
+        }
+    }
+
+    /* Medium devices*/
+    @media (min-width: 760px) {
+        .head {
+            margin-top: 5%
+        }
+        
+        .logo {
+            max-width: 35%;
+        } 
+
+        .pinata {
+            max-width: 25%;
+        }
+
+        .target, .input, .errorList, .reload {
+            margin-top: 5%;
+        }
+    }
+
+    /* MDPI laptop and landscape Ipad */
+    @media (min-width: 1280px) and (min-height: 810px) {
+        .logo {
+            max-width: 20%;
+        } 
+
+        .pinata {
+            max-width: 20%;
+        }
+    }
+
+    /* large screens */
+    @media (min-width: 1080px) { /*was 1080*/
+        .logo {
+            max-width: 35%;
+        } 
+
+        .pinata {
+            max-width: 35%;
+        }
+
+        .head, .container {
+            margin: 3% 0;
+        }
+        
+        .target, .input, .errorList {
+            margin-top: 2%;
+        }
+
+        body {
+            font-size: xx-large;
+        }
+
+        footer {
+            font-size: large;
+        }
+    }
+
+    /* tvs */
+    @media (min-width: 1920px) {
+        .logo {
+            max-width: 20%;
+        } 
+
+        .pinata {
+            max-width: 12%;
+        }
+
+        .head, .container {
+            margin: 3% 0;
+        }
+        
+        .target, .input, .errorList {
+            margin-top: 1.5%;
+        }
+
+        .reload {
+            margin-top: 2%;
+        }
+
+        footer {
+            font-size: large;
+        }
+    }
+
+    @media (min-width: 3000px) {
+        .reload {
+            margin-top: 3%;
+        }
+
+        footer {
+            font-size: xx-large;
+        }
+    }
+
+
+    /* Custom queries*/
+    /* 720p HD TV */
+    @media (width: 1280px) and (height: 720px) {
+        .logo {
+            max-width: 15%;
+        } 
+
+        .pinata {
+            max-width: 13%;
+        }
+
+        .reload {
+            margin-top: 3%;
+        }
+    }
+
+    /* Ipad */
+    @media (width: 810px) and (height: 1080px) {
+        .logo {
+            max-width: 50%;
+        } 
+
+        .pinata {
+            max-width: 35%;
+        }
+
+        .target, .reload {
+            margin-top: 5%;
+        }
+    }
+
+    /* Kindle */
+    @media (width: 800px) and (height: 1280px) {
+        .logo {
+            max-width: 50%;
+        } 
+
+        .pinata {
+            max-width: 50%;
+        }
+
+        .target, .reload {
+            margin-top: 5%;
+        }
+    }
+
