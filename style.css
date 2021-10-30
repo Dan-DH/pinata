@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ambystoma_mexicanumregular';
-    src: url('ambystomamexicanum-vr7v-webfont.woff2') format('woff2'),
-         url('ambystomamexicanum-vr7v-webfont.woff') format('woff');
+    src: url('./assets/fonts/ambystomamexicanum-vr7v-webfont.woff2') format('woff2'),
+         url('./assets/fonts/ambystomamexicanum-vr7v-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     font-size: calc(1em + 1vw);
-    font-family: "ambystoma_mexicanumregular";   
+    font-family: 'ambystoma_mexicanumregular';
 }
 
 a:link {
@@ -46,6 +46,7 @@ a:link {
 
 .reload {
     transform: scale(1.5);
+    cursor: pointer;
 }
 
 footer {
