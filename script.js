@@ -1,4 +1,6 @@
 async function game() {
+    //clear the input form on page refresh
+    document.querySelector(".input").value = "";
 
     //set the game over switch
     var gameOver = false;
@@ -37,7 +39,7 @@ async function game() {
 
     //set keydown event listener. Activates when the user presses 'enter'
     document.querySelector(".input").addEventListener("keydown", (key) => {
-        if (key.code === "Enter" && !gameOver) {
+        if (key.keyCode == "13" && !gameOver) {
             //check if the letter is neither in the word nor in the error list
             if (!target.includes(letter.value) && !wrong.includes(letter.value)) {
                 errors++;

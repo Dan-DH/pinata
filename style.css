@@ -7,6 +7,7 @@
 }
 
 body {
+    position: relative;
     background-color: brown;
     text-align: center;
     color: white;
@@ -26,11 +27,11 @@ a:link {
 }
 
 .logo {
-    max-width: 90%;
+    max-width: 35%;
 }
 
 .pinata {
-    max-width: 70%;
+    max-width: 25%;
 }
 
 .errorList {
@@ -81,14 +82,6 @@ footer {
         .reload {
             margin-top: 7%;
         }
-
-        .logo {
-            max-width: 35%;
-        } 
-
-        .pinata {
-            max-width: 25%;
-        }
     }
 
     /*medium phones*/
@@ -104,13 +97,13 @@ footer {
             margin-top: 6%;
         }
 
-        .logo {
+/*         .logo {
             max-width: 35%;
         } 
 
         .pinata {
             max-width: 25%;
-        }
+        } */
     }
 
     /* Medium devices*/
@@ -119,13 +112,13 @@ footer {
             margin-top: 5%
         }
         
-        .logo {
+/*         .logo {
             max-width: 35%;
         } 
 
         .pinata {
             max-width: 25%;
-        }
+        } */
 
         .target, .input, .errorList, .reload {
             margin-top: 5%;
@@ -145,9 +138,9 @@ footer {
 
     /* large screens */
     @media (min-width: 1080px) { /*was 1080*/
-        .logo {
+/*         .logo {
             max-width: 35%;
-        } 
+        }  */
 
         .pinata {
             max-width: 35%;
