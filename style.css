@@ -128,7 +128,7 @@ footer {
     }
 
     /* large screens */
-    @media (min-width: 1080px) { /*was 1080*/
+    @media (min-width: 1080px) { 
         .logo {
             max-width: 35%;
         } 
@@ -143,6 +143,37 @@ footer {
         
         .target, .input, .errorList {
             margin-top: 2%;
+        }
+
+        body {
+            font-size: xx-large;
+        }
+
+        footer {
+            font-size: large;
+        }
+    }
+
+    /* large latop screens */
+    @media (min-width: 1080px) and (max-height: 1000px) { 
+        .logo {
+            max-width: 20%;
+        } 
+
+        .pinata {
+            max-width: 12%;
+        }
+
+        .head, .container {
+            margin: 2% 0;
+        }
+        
+        .target, .input, .errorList {
+            margin-top: 2%;
+        }
+
+        .reload {
+            margin-top: 3%;
         }
 
         body {
