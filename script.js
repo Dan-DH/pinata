@@ -4,7 +4,7 @@ async function game() {
     var gameOver = false;
 
     //pinata image array
-    const imgs = ["./assets/images/pinata1.png", "./assets/images/pinata2.png", "./assets/images/pinata3.png", "./assets/images/pinata4.png", "./assets/images/pinata5.png", "./assets/images/pinata6.png", "./assets/images/pinata7.png", "./assets/images/pinata8.png"];
+    const imgs = ["./assets/images/pinata1.webp", "./assets/images/pinata2.webp", "./assets/images/pinata3.webp", "./assets/images/pinata4.webp", "./assets/images/pinata5.webp", "./assets/images/pinata6.webp", "./assets/images/pinata7.webp", "./assets/images/pinata8.webp"];
 
     //fetch the dictionary and pick a random word
     const dict = await fetch("./dict.json").then(response => response.json())
