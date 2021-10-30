@@ -42,19 +42,18 @@ async function game() {
 
         //enforcing 1 char limit for mobile phones
         letter.value.length > 1 ? letter.value = letter.value.substring(0, 1) : true;
-        console.log(letter.value)
 
         //check if key pressed was 'enter' to submit the letter. keyCode works on mobile as well
         if (key.keyCode == "13" && !gameOver) {
             //check if the letter is neither in the word nor in the error list
-            if (!target.includes(letter.value) && !wrong.includes(letter.value)) {
+            if (!letter.value == "" && !target.includes(letter.value) && !wrong.includes(letter.value)) {
                 errors++;
                 wrong.push(letter.value);
                 errorList.innerHTML = wrong.join(" ");
             } else {
                 //if the letter is in the word, show the matching letters
-                target.map((l, index)  => {
-                    letter.value == l ? decoy[index] = letter.value : true;
+                target.map((l, i)  => {
+                    letter.value == l ? decoy[i] = letter.value : true;
                 });
             }
             

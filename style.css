@@ -7,7 +7,6 @@
 }
 
 body {
-    position: relative;
     background-color: brown;
     text-align: center;
     color: white;
@@ -52,7 +51,7 @@ a:link, a:visited, a:active {
 
 footer {
     font-size: small;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 2%;
