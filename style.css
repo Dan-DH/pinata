@@ -23,7 +23,7 @@ a:link {
 }
 
 .head, .container {
-    margin: 10% 0 0 0;
+    margin: 5% 0 0 0;
 }
 
 .logo {
@@ -95,14 +95,6 @@ footer {
     @media (min-height: 800px) {
         .target, .input, .errorList, .reload {
             margin-top: 6%;
-        }
-
-        .logo {
-            max-width: 35%;
-        } 
-
-        .pinata {
-            max-width: 25%;
         }
     }
 
