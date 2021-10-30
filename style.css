@@ -52,7 +52,7 @@ a:link, a:visited, a:active {
 
 footer {
     font-size: small;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 2%;
