@@ -1,10 +1,8 @@
 async function game() {
-    window.addEventListener('resize', () =>{
+    window.addEventListener('load', () =>{
         document.querySelector("body").style.maxWidth = window.innerWidth + "px";
         document.querySelector("body").style.maxHeith  = window.innerHeight + "px";
     });
-
-    console.log(window.innerHeight)
 
     //clear the input form on page refresh
     document.querySelector(".input").value = "";
