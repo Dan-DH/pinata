@@ -1,9 +1,4 @@
 async function game() {
-    window.addEventListener('load', () =>{
-        document.querySelector("body").style.maxWidth = window.innerWidth + "px";
-        document.querySelector("body").style.maxHeith  = window.innerHeight + "px";
-    });
-
     //clear the input form on page refresh
     document.querySelector(".input").value = "";
 
@@ -43,10 +38,11 @@ async function game() {
     }
 
     //set keyup event listener
-    document.querySelector(".input").addEventListener("keydown", (key) => {
+    document.querySelector(".input").addEventListener("keyup", (key) => {
 
         //enforcing 1 char limit for mobile phones
-        letter.value.length > 1 ? letter.value = letter.value.substring(0, 1) : true;
+/*         letter.value.length > 1 ? letter.value = letter.value.substring(0, 1) : true;
+        console.log(letter.value) */
 
         //check if key pressed was 'enter' to submit the letter. keyCode works on mobile as well
         if (key.keyCode == "13" && !gameOver) {
