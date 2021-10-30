@@ -51,7 +51,7 @@ a:link {
 
 footer {
     font-size: small;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 2%;
@@ -83,11 +83,11 @@ footer {
         }
 
         .logo {
-            max-width: 65%;
+            max-width: 35%;
         } 
 
         .pinata {
-            max-width: 50%;
+            max-width: 25%;
         }
     }
 
