@@ -103,6 +103,14 @@ footer {
         .target, .input, .errorList, .reload {
             margin-top: 6%;
         }
+
+        .logo {
+            max-width: 35%;
+        } 
+
+        .pinata {
+            max-width: 25%;
+        }
     }
 
     /* Medium devices*/
