@@ -88,11 +88,11 @@ async function game() {
     });
 
     //restart game function
-    document.querySelector(".reload").addEventListener("click",() => {
+/*     document.querySelector(".reload").addEventListener("click",() => {
         letter.value = "";
         window.location.reload();
         }); 
-    }
+    } */
 
 //run the game
 game();
