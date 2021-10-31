@@ -14,7 +14,7 @@ async function game() {
     const imgs = ["./assets/images/pinata1.webp", "./assets/images/pinata2.webp", "./assets/images/pinata3.webp", "./assets/images/pinata4.webp", "./assets/images/pinata5.webp", "./assets/images/pinata6.webp", "./assets/images/pinata7.webp", "./assets/images/pinata8.webp"];
 
     //fetch the dictionary, pick a random word and turn it into an array
-    const dict = await fetch("./dict.json").then(response => response.json());
+    const dict = await fetch("./dict.json").then(response => response.json()).catch(error => console.error(error));
     const target = dict.data[Math.floor(Math.random() * 2466)].split("");
     
     //create the decoy word array with hyphens and display it

@@ -1,2 +1,0 @@
-        <embed src="https://www.wikipedia.org/" style="width:412px; height: 915px;">
-        <embed src="https://www.wikipedia.org/" style="width:915px; height: 412px;">
