@@ -50,6 +50,8 @@ async function game() {
 
         //check if key pressed was 'enter' to submit the letter. keyCode works on mobile as well
         if (key.keyCode == "13" && !gameOver) {
+            //make the letter lowercase for mobile and keyboards with caps on
+            letter.value = letter.value.toLowerCase();
             //check if the letter is neither in the word nor in the error list
             if (!letter.value == "" && !target.includes(letter.value) && !wrong.includes(letter.value)) {
                 errors++;
