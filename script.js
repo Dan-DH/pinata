@@ -1,6 +1,8 @@
 async function game() {
     //print device's browser height and width for responsive design
+/*     window.onload = () => {
     console.log(window.innerHeight, window.innerWidth)
+    }; */
 
     //clear the input form on page refresh
     document.querySelector(".input").value = "";
