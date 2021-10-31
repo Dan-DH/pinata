@@ -91,8 +91,9 @@ async function game() {
 /*     document.querySelector(".reload").addEventListener("click",() => {
         letter.value = "";
         window.location.reload();
-        }); 
-    } */
+        }); */
+        
+    }
 
 //run the game
 game();
