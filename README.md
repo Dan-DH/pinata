@@ -20,7 +20,7 @@ The game uses a list of common and not-so-common words in English.
 - Correctly guessed letters appear in the target word.
 - Incorrectly guessed words appear below the input field and add another piece to the piñata's image.
 - On victory or loss, the answer reveals itself with a little animation.
-- On victory, a happy llama appears doing a little dance.
+- On victory, the llama does a little dance.
 
 ### Time frame
 
